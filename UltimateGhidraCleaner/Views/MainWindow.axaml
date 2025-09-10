@@ -7,7 +7,7 @@
         x:Class="UltimateGhidraCleaner.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="UltimateGhidraCleaner">
+        Title="Ultimate Ghidra Cleaner">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,6 +15,26 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    <StackPanel>
+        <StackPanel Margin = "10" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+            <StackPanel>
+                <Label>Input</Label>
+                <TextBox Text="{Binding Input}" Height="500" Width="675" AcceptsReturn="True" TextWrapping="NoWrap"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>Output</Label>
+                <TextBox Text="{Binding Output}" Height="500" Width="675" AcceptsReturn="True" TextWrapping="NoWrap"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Command="{Binding CleanCommand}" Margin="30" HorizontalAlignment="Center">Cleanup</Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15">
+            <ToggleSwitch IsChecked="{Binding ShouldFixIndent}">Fix indentation</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldRemoveDestructors}">Remove Destructors</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldRemoveImpl}">Remove impl</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldReplaceUnderscores}">__ becomes ::</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldCleanupConditions}">__ becomes ::</ToggleSwitch>
+            <!-- <ToggleSwitch IsChecked="{Binding ShouldCommentLABFUNGotos}">Comment LABs, FUNs and gotos</ToggleSwitch> -->
+        </StackPanel>
+    </StackPanel>
+    
 </Window>

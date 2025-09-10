@@ -72,3 +72,4 @@ C:\Users\supre\UltimateGhidraCleaner\UltimateGhidraCleaner\obj\Debug\net9.0\refi
 C:\Users\supre\UltimateGhidraCleaner\UltimateGhidraCleaner\obj\Debug\net9.0\UltimateGhidraCleaner.pdb
 C:\Users\supre\UltimateGhidraCleaner\UltimateGhidraCleaner\obj\Debug\net9.0\UltimateGhidraCleaner.genruntimeconfig.cache
 C:\Users\supre\UltimateGhidraCleaner\UltimateGhidraCleaner\obj\Debug\net9.0\ref\UltimateGhidraCleaner.dll
+C:\Users\supre\UltimateGhidraCleaner\UltimateGhidraCleaner\obj\Debug\net9.0\UltimateGhidraCleaner.sourcelink.json
