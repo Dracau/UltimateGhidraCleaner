@@ -28,12 +28,16 @@
         </StackPanel>
         <Button Command="{Binding CleanCommand}" Margin="30" HorizontalAlignment="Center">Cleanup</Button>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15">
-            <ToggleSwitch IsChecked="{Binding ShouldFixIndent}">Fix indentation</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldFixIndent}">Fix Indentation</ToggleSwitch>
             <ToggleSwitch IsChecked="{Binding ShouldRemoveDestructors}">Remove Destructors</ToggleSwitch>
             <ToggleSwitch IsChecked="{Binding ShouldRemoveImpl}">Remove impl</ToggleSwitch>
             <ToggleSwitch IsChecked="{Binding ShouldReplaceUnderscores}">__ becomes ::</ToggleSwitch>
-            <ToggleSwitch IsChecked="{Binding ShouldCleanupConditions}">__ becomes ::</ToggleSwitch>
-            <!-- <ToggleSwitch IsChecked="{Binding ShouldCommentLABFUNGotos}">Comment LABs, FUNs and gotos</ToggleSwitch> -->
+            <ToggleSwitch IsChecked="{Binding ShouldCleanupConditions}">Cleanup Conditions</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldCleanupNamespaces}">Cleanup Namespaces</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldRemoveCasts}">Remove Casts</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldReplaceThis}">This Becomes Fighter</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldCommentLABGotos}">Comment LABs and gotos</ToggleSwitch>
+            <ToggleSwitch IsChecked="{Binding ShouldReplaceHashes}">Translate Hashes</ToggleSwitch>
         </StackPanel>
     </StackPanel>
     
